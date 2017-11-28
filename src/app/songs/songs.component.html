@@ -1,0 +1,20 @@
+<div class="songlist">
+  <mat-accordion>
+    <mat-expansion-panel *ngFor="let song of songs; trackBy: trackByFn">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{song.name}}
+        </mat-panel-title>
+        <mat-panel-description>
+          {{ song.artist}}
+        </mat-panel-description>
+        <mat-panel-description>
+          {{ song.year}} ({{song.year | getAge}} years)
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <div>
+        <button mat-raised-button (click)="onEdit.emit(song)">Edit</button>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>

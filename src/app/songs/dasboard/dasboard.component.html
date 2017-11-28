@@ -1,0 +1,11 @@
+<div class="w50" >
+  <div class="container">
+    <div #list></div>
+    <app-songs [songs]="songs" (onEdit)="lazyEdit($event)"></app-songs>
+  </div>
+</div>
+<div class="w50">
+  <div class="container">
+    <div #edit></div>
+  </div>
+</div>

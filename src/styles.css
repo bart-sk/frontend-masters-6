@@ -1,0 +1,33 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body {
+  background: #ddd;
+}
+.songlist .mat-expansion-panel {
+  background: white;
+}
+
+.songlist .mat-expansion-panel-header-title {
+  flex-basis: 0;
+  flex-grow: 2;
+}
+
+.songlist .mat-expansion-panel-header-description {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.songlist .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+.w50 {
+  float: left;
+  width: 50%;
+}
+.w50 .container{
+  padding: 10px;
+}
+.custom-form .mat-form-field {
+  width: 100%;
+}
